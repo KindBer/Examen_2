@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename='home.css') }}">
+
+<!--user already logged in, show different Home Page-->
+  {% if current_user.is_authenticated%}
+  <h1> Examen de Programacion Avanzada </h1>
+  <p>Bienvenido a la app</p>
+  {% else %}
+ 
+  {% endif %}
+		  
+{% endblock content %}
